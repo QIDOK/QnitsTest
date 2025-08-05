@@ -22,7 +22,6 @@ CREATE TABLE `url_clicks` (
     `url_id` int(11) NOT NULL,
     `user_agent` text,
     `ip_address` varchar(45),
-    `is_bot` tinyint(1) NOT NULL DEFAULT 0,
     `clicked_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (`id`),
     KEY `idx_url_id` (`url_id`),
